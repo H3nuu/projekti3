@@ -1,3 +1,4 @@
+/* Sivun kokonaisuuden muotoilu */
 body, html {
     height: 100%;
     margin: 0;
@@ -5,6 +6,7 @@ body, html {
     color: #777;
   }
   
+  /* Kuvien ominaisuuksien yleiset määrittelyt */
   .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
@@ -13,6 +15,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   
+  /* Kuvien yksilökohtaiset ominaisuudet */
   }
   .bgimg-1 {
     background-image: url("Paritanssi.png");
@@ -29,7 +32,8 @@ body, html {
     min-height: 100%;
   }
   
-  .caption {
+  /* Kuvan päälle tulevien tekstien yleiset määritykset */
+  .caption, .caption2, .caption3 {
     position: absolute;
     left: 0;
     top: 50%;
@@ -37,38 +41,22 @@ body, html {
     text-align: center;
     color: #000;
   }
-
-  .caption2 {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-
-  .caption3 {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption .caption2 .caption3 span.border {
-    background-color: #111;
+ /* Kuvien ja niiden sijoituselementin ominaisuudet */
+  span.border {
+    background-color: #darkolivegreen;
     color: #fff;
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
   }
   
+  /* Sivun otikon ominaisuudet */
   header {
       background-image: url("Study.jpg");
       min-height: 100%;
   }
 
+  /* 3 -tason otsikon ominaisuudet */
   h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -79,26 +67,30 @@ body, html {
     background-image: none;
   }
 
+  /* Sekä 3- että 4-tason tekstien fontti ja koko */
   h4 h3 {
     font: 8px "Lato", arial;
   }
 
+  /* Elemetin <p> sisällön ominaisuudet: värit ja sijoitus */ 
   p {
       color: #AEE677;
       background-color: darkolivegreen;
       text-align: center;
   }
 
+  /* Elemetin <article> sisällön ominaisuudet: väri */ 
   article {
       color: white;
   }
 
+  /* Kuvista luodaan reponsiiviset */
   .responsive {
     width: 100%;
     height: auto;
   }
   
-  /* Turn off parallax scrolling for tablets and phones */
+  /* parallax pois käytöstä tableteilla ja puhelimilla */
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
