@@ -37,8 +37,26 @@ body, html {
     text-align: center;
     color: #000;
   }
+
+  .caption2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .caption3 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
   
-  .caption span.border {
+  .caption .caption2 .caption3 span.border {
     background-color: #111;
     color: #fff;
     padding: 18px;
